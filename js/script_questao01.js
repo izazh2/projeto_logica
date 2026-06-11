@@ -14,6 +14,6 @@ formDados.addEventListener('submit', (evt) => {
 
     let media = parseFloat(num1 + num2 + num3) / parseFloat(3)
 
-    divResultado.innerHTML = `A media do s números ${media}`
+    divResultado.innerHTML = `A media do s números ${media.toFixed(2).replace('.',',')}`
 
 })
