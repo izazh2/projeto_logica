@@ -17,14 +17,14 @@ formDados.addEventListener('submit', (evt) => {
     let imc = parseFloat(num1) / parseFloat(num2 * num2)
 
     if (imc < 20) {
-        divResultado.innerHTML = `<p>${nome}, seu IMC é ${imc.toFixed(2)} e você está abaixo do peso.</p>`
+        divResultado.innerHTML = `${nome}, seu IMC é ${imc.toFixed(2)} e você está abaixo do peso.`
     } else if ((imc >= 20) && (imc < 25)) {
-        divResultado.innerHTML = `<p>${nome}, seu IMC é ${imc.toFixed(2)} e você está com peso normal.</p>`
+        divResultado.innerHTML = `${nome}, seu IMC é ${imc.toFixed(2)} e você está com peso normal.`
     } else if ((imc >= 25) && (imc < 30)) {
-        divResultado.innerHTML = `<p>${nome}, seu IMC é ${imc.toFixed(2)} e você está acima do peso.</p>`
+        divResultado.innerHTML = `${nome}, seu IMC é ${imc.toFixed(2)} e você está acima do peso.`
     }else if ((imc >= 30) && (imc < 35)) {
-        divResultado.innerHTML = `<p>${nome}, seu IMC é ${imc.toFixed(2)} e você está com obesidade grau 1.</p>`
+        divResultado.innerHTML = `${nome}, seu IMC é ${imc.toFixed(2)} e você está com obesidade grau 1.`
     } else if ((imc >= 35) && (imc < 40)) {
-        divResultado.innerHTML = `<p>${nome}, seu IMC é ${imc.toFixed(2)} e você está com obesidade grau 2.</p>`
+        divResultado.innerHTML = `${nome}, seu IMC é ${imc.toFixed(2)} e você está com obesidade grau 2.`
     }
 })
