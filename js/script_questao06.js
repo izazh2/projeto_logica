@@ -24,7 +24,7 @@ formDados.addEventListener('submit', (evt) => {
         divResultado.innerHTML = `${nome}, seu IMC é ${imc.toFixed(2)} e você está acima do peso.`
     }else if ((imc >= 30) && (imc < 35)) {
         divResultado.innerHTML = `${nome}, seu IMC é ${imc.toFixed(2)} e você está com obesidade grau 1.`
-    } else if ((imc >= 35) && (imc < 40)) {
+    } else ((imc >= 35) && (imc < 40)) {
         divResultado.innerHTML = `${nome}, seu IMC é ${imc.toFixed(2)} e você está com obesidade grau 2.`
     }
 })
